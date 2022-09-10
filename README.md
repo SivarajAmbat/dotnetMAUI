@@ -55,6 +55,7 @@ namespace MauiAppCS
 ```
 
 ### NavigationPage
+
 ```
 // Define first page as a NavigationPage in App.xaml.cs	
     public partial class App : Application
@@ -84,6 +85,7 @@ namespace MauiAppCS
 ### FlyoutPage
 ```
 // In code-behind file:	
+
 public partial class FlyoutPage1 : FlyoutPage
 {
 	public FlyoutPage1()
@@ -91,7 +93,9 @@ public partial class FlyoutPage1 : FlyoutPage
 		InitializeComponent();
 	}
 }
+
 // Markup:	
+
 <?xml version="1.0" encoding="utf-8" ?>
 <FlyoutPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -115,9 +119,9 @@ public partial class FlyoutPage1 : FlyoutPage
 </FlyoutPage>
 ```
 ### TabbedPage
+```
+// TabbedPage markup:
 
-// TabbedPage markup	
-	
 <?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -142,6 +146,7 @@ public partial class FlyoutPage1 : FlyoutPage
 </TabbedPage>
 
 // Ensure to make changes in C#:	
+
 public partial class TabbedPage1 : TabbedPage
 {
 	public TabbedPage1()
