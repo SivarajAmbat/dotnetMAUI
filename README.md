@@ -81,4 +81,73 @@ namespace MauiAppCS
 		Navigation.PopAsync();
 	}
 ```
+### FlyoutPage
+```
+// In code-behind file:	
+public partial class FlyoutPage1 : FlyoutPage
+{
+	public FlyoutPage1()
+	{
+		InitializeComponent();
+	}
+}
+// Markup:	
+<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="MauiApp2.FlyoutPage1"
+            Title="FlyoutPage1"
+            FlyoutLayoutBehavior="Popover">
+    <FlyoutPage.Flyout>
+        <ContentPage Title="My App">
+            <VerticalStackLayout>
+                <Label Text="Home" />
+            </VerticalStackLayout>
+        </ContentPage>
+    </FlyoutPage.Flyout>
+    <FlyoutPage.Detail>
+        <ContentPage>
+            <VerticalStackLayout>
+                <Label Text="Hello World" />
+            </VerticalStackLayout>
+        </ContentPage>
+    </FlyoutPage.Detail>
+</FlyoutPage>
+```
+### TabbedPage
+
+// TabbedPage markup	
+	
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="MauiApp2.TabbedPage1"
+            Title="TabbedPage1"
+            BarBackgroundColor="Navy"
+            BarTextColor="White"
+            SelectedTabColor="White"
+            UnselectedTabColor="LightSteelBlue">
+    <ContentPage Title="Page 1"
+                 IconImageSource="dotnet_bot.svg">
+        <Label Text="Demo Page 1" />
+    </ContentPage>
+    <ContentPage Title="Page 2"
+                 IconImageSource="dotnet_bot.svg">
+        <Label Text="Demo Page 2" />
+    </ContentPage>
+    <ContentPage Title="Page 3"
+                 IconImageSource="dotnet_bot.svg">
+        <Label Text="Demo Page 3" />
+    </ContentPage>
+</TabbedPage>
+
+// Ensure to make changes in C#:	
+public partial class TabbedPage1 : TabbedPage
+{
+	public TabbedPage1()
+	{
+		InitializeComponent();
+	}
+}
+```
 
