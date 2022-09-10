@@ -1,4 +1,4 @@
-## CODE SNIPPETS
+## CODE SNIPPETS FOR DEMO SESSION
 
 ## Creating UI in C#
 ```
